@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<style>
+*{
+ box-sizing: border-box;
+ margin: 0;
+}
+body
+{
+	font-family: arial;
+	
+  
+
+
+}		
+.heading
+{
+	background-color: #314cfd;
+	padding: 5px;
+	text-align: center;
+	
+}	
+.fimage
+{
+  width:300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 50px 15px 20px 50px;
+  opacity: 0.6;
+
+
+}	
+.fimage:hover
+{
+  opacity: 1;
+  border-top: solid 2px black;
+  border-bottom:  solid 4px black;
+}
+.container
+{
+text-align: center;
+}
+.con2
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar
+{
+	display: flex;
+	background-color: #333;
+	/*position: -webkit-sticky; /* Safari */
+  /*position: sticky;
+  top: 0;*/
+}
+.navbar a
+{
+ color: white;
+ text-decoration:  none;
+padding: 20px 30px;
+text-align: center;
+font-size: 20px;
+}
+.navbar a:hover
+{
+	background-color: black;
+	font-size: 25px;
+}
+.bottomleft
+{
+  position: relative;
+  left: 15px;
+  bottom: 50px;
+  color:white;
+  font-size: 25px;
+ 
+}
+	</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script >
+ 
+ $(document).ready(function(){
+   $("#i1").mouseenter(function(){
+     $(".bottomleft").fadeIn();
+    });
+   $("#i1").mouseleave(function(){
+     $(".bottomleft").fadeOut();
+    });
+ });  
+
+</script>
+
+</head>
+<body>
+<div class="heading"><h1><b>FRIENDS GALLERY</b></h1></div>
+<div class="navbar">
+	<a href="front_page_layout.html">Home</a>
+	<a href="image_gallery.html" style="background-color: #314cfd; border-style: inset;">Friends</a>
+	<a href="#">Gallery</a>
+	<a href="#">Study</a>
+</div>
+<div class="con2">
+<div class="fimage" id="i1">
+  <img src="athar.jpeg" height="400px" width="300px">
+  <div class="bottomleft">NIT JAMSHEDPUR</div>
+  <div class="container"><h3> ATHAR HUSSAIN</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i></a>  &nbsp; <a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></a></p>
+  </div>
+</div>
+<div class="fimage">
+  <img src="ankit.jpeg" height="400px" width="300px">
+  <div class="container"><h3> ANKIT KUMAR</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i></a>  &nbsp; <a href="#"> <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></a></p>
+  </div>
+  
+</div>
+<div class="fimage">
+  <img src="aniket.jpg" height="400px" width="300px">
+  <div class="container"><h3> ANIKET MISHRA</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+  </div>
+</div>
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> AAMIR KHAN</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+  </div>
+</div>
+</div>
+
+
+<div class="con2">
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> PRATIK</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i></a>  &nbsp;<a href="#"> <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></a></p>
+  </div>
+</div>
+<div class="fimage">
+  <img src="rajiv.jpeg" height="400px" width="300px">
+  <div class="container"><h3> RAJIV GUPTA</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+  </div>
+</div>
+<div class="fimage">
+  <img src="ritik.jpeg" height="400px" width="300px">
+  <div class="container"><h3> RITIK RAJ</h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+  </div>
+</div>
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> PIYUSH </h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+  	
+  </div>
+</div>
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> MADHUSUDAN MANDAL </h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+    
+  </div>
+</div>
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> SURAJ KUMAR </h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+    
+  </div>
+</div>
+<div class="fimage">
+  <img src="img1.jpg" height="400px" width="300px">
+  <div class="container"><h3> SAURYA ROY </h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+    
+  </div>
+</div>
+<div class="fimage">
+  <img src="sahil.jpg" height="400px" width="300px">
+  <div class="container"><h3> SAHIL ALAM </h3><p> <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#3b5998;"></i></a> &nbsp; <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color:#F91E77;"></i>  &nbsp; <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0e76a8;"></i></p>
+    
+  </div>
+</div>
+</div>
+<div clas="footer" style="text-align: center; height: 600px; opacity: 0.8; padding: 50px; font-size: 35px;  background-image: url(fbg.jpg); background-repeat: no-repeat; background-size: cover; object-fit: contain;">
+
+ </div>
+
+
+
+
+
+</body>
+</html>

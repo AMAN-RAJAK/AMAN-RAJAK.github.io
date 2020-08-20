@@ -1,0 +1,129 @@
+body{
+	background-color: lightblue;
+	text-align: center;
+}
+.wrapper{
+	width: 100px;
+	padding: 20px;
+	box-sizing: border-box; 
+}
+.cloud{
+	position: absolute;
+	top:-200px;
+	transform: translateX(200px);
+	transform: scaleX(0.00001);
+	transform: scaleY(0.3);
+	opacity: 50%;
+
+	animation-name: wind;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+
+
+}
+.cloud2{
+	position: absolute;
+	top: -200px;
+	transform: translateX(90%);
+	transform: scaleX(0.00001);
+	transform: scaleY(0.3);
+	width: 300px;
+	height: 500px;
+	animation-name: wind;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+
+}
+.circle{
+	width: 100px;
+	padding: 50px 0;
+	line-height: 0;
+	margin: 60px auto;
+	background-color: red;
+	border-radius: 50px;
+	color:white;
+	cursor: pointer;
+	transition:1s;
+	position: absolute;
+	bottom:  50%;
+	right: 50%;
+
+
+}
+.circle:hover{
+	background-color: black;
+	transform: rotateZ(360deg);
+	color:red;
+}
+.road{
+	transform: scaleX(78);
+	transform: scaleY(0.3);
+	position: absolute;
+	bottom: -33%
+}
+.car1{
+	position: absolute;
+	bottom: -25%;
+	transform: scaleX(0.3);
+	transform: scaleY(0.5);
+	animation-name: drive;
+	animation-duration:4s;
+	/*animation-delay: 3s;*/
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+
+
+}
+.car2{
+	position: absolute;
+	bottom: -14%;
+	right: 0%;
+	transform: scaleX(0.4);
+	transform: scaleY(0.7);
+	animation-name: drive2;
+	animation-duration: 4s;
+	/*animation-fill-mode: backward;*/
+	/*animation-delay: 3s;*/
+	animation-iteration-count: infinite;
+	animation-direction:;
+	animation-timing-function: linear;
+	/*animation-name: jump;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-timing-function: linear;*/
+	
+}
+
+@keyframes drive{
+	from{
+		transform: translateX(-1800px);
+	}
+	to{
+		transform: translateX(1800px);
+	}
+}
+@keyframes drive2{
+	from{
+		transform: translateX(1800px);
+	}
+	to{transform: translateX(-1800px);
+	}
+}
+@keyframes wind{
+	from{
+		transform: translateX(-2000px);
+	}
+	to{
+		transform: translateX(+2000px);
+	}
+}
+@keyframes jump{
+	0%{bottom: -14%;}
+	50%{bottom: -1%;}
+	100%{bottom: -14%;}
+}
